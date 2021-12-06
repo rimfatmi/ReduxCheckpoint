@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AddTask from "./Components/AddTask";
 import TaskList from "./Components/TaskList";
 import Home from "./Components/Home";
+import Filter from "./component/Filter";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/list" component={TaskList} />
+          <Route path="/Filter" component={Filter} />
 
           <Route path="/add" component={AddTask} />
         </Switch>
